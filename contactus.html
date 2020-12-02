@@ -37,11 +37,12 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
+                <div class="col-12 col-sm-8">
+                    <h1>Sahil's Coffee</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/SAHILS COFFEE.jpg" class="img-fluid img-round" alt="">
                 </div>
             </div>
         </div>
@@ -79,10 +80,14 @@
                 <h5>Map of our Location</h5>
             </div>
             <div class="col-12 col-sm-11 offset-sm-1">
-               <div class="btn-group" role="group">
-                <a role="button" class="btn btn-primary"  href="tel:+8427566451" ><i class="fa fa-phone"></i> Call</a>
-                <a role="button" class="btn btn-info" ><i class="fa fa-skype"></i> Skype</a>
-                <a role="button" class="btn btn-success " href="mailto:sr48840@gmail.com" ><i class="fa fa-envelope-o "></i> Email</a>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary"  href="tel:+8427566451" ><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info" ><i class="fa fa-skype"></i> Skype</a>
+                    <a role="button" class="btn btn-success " href="mailto:sr48840@gmail.com" ><i class="fa fa-envelope-o "></i> Email</a>
+                </div>
+                
+           
+           
             </div>
 
             </div>
@@ -93,10 +98,70 @@
               <h3>Send us your Feedback</h3>
            </div>
             <div class="col-12 col-md-9">
-                Form goes here
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-lable">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-lable">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="Emailid" class="col-md-2 col-form-lable">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-2 col-form-lable">Tel. Number</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input " name="approve" id="approve" >
+                                <label for="form-check-lable" for="approve">
+                                    <Strong>May we contact you?</Strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 form-group-lable">Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="feedback" id="feedback" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10"> 
+                            <button class="btn btn-primary" type="submit">
+                                Send Feedback
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
              <div class="col-12 col-md">
-            </div>
+             </div>
        </div>
 
     </div>
