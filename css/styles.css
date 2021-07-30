@@ -19,7 +19,7 @@
 
 .jumbotron{
     padding: 70px 30px 70px 30px;
-    margine: 0px auto;
+    margin: 0px auto;
     background: linear-gradient(to left, #b2fefa, #0ed2f7);
 }
 
@@ -42,4 +42,19 @@ body {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px;
+}
+.carousel{
+    background:#c9d6ff;
+}
+.carousel-item{
+    height: 300px;
+
+}
+.carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+    height: 300px;
+    width: auto;
 }
