@@ -58,3 +58,13 @@ body {
     height: 300px;
     width: auto;
 }
+#carouselButton{
+    right: 0;
+    position: absolute;
+    bottom: 0;
+ 
+}
+#carouselButton button{
+    background-color: transparent;
+    color:#2c2f33;
+}
