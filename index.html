@@ -218,12 +218,10 @@
                             <span class="carousel-control-next-icon"></span>
                         </a>
                         <div class="btn-group" id="carouselButton">
-                            <button class="btn  btn-sm" id="carousel-pause">
+                            <button class="btn  btn-sm" id="carouselBtn">
                                 <span class="fa fa-pause"></span>
                             </button>
-                            <button class="btn  btn-sm" id="carousel-play">
-                                <span class="fa fa-play"></span>
-                            </button>
+                           
                         </div>
                     </div>
                 </div>
@@ -344,12 +342,22 @@
     <script>
         $(document).ready(function(){
             $('#mycarousel').carousel({interval:2000});
-            $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
+            $("#carouselBtn").click(function(){
+                if($('#carouselBtn').children('span').hasClass('fa-pause')){
+                    $("#mycarousel").carousel('pause');
+                    $('#carouselBtn').children('span').removeClass('fa-pause');
+                    $('#carouselBtn').children('span').addClass('fa-play');
+
+                }
+                else{
+                    $("#mycarousel").carousel('cycle');
+                    $('#carouselBtn').children('span').removeClass('fa-play');
+                    $('#carouselBtn').children('span').addClass('fa-pause');
+
+                }
+                
             });
-            $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
+     
         })
     </script>
 </body>
